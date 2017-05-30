@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Sistema Experto - Triki</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="shortcut icon" href="machine.png">
+	<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/modernizr-custom.js"></script>
+</head>
+<body>
+	<div id="content">
+		<div id="game">
+			<div id="title">
+				<h1>Juego del Triki</h1>
+			</div>
+		</div>
+		<p align="center">Proyecto Final Asignatura Sistemas Expertos</p>
+		<p align="center">Alumno: Darwin Gomez</p>
+		<p align="center">Profesor: Dario Garcia</p>
+		<div id="content-board" align="center">
+			<div id="board">
+				<div class="rows">
+					<div class="row">
+						<div id="c02" class="cell" onclick="RevisarCelda(0,2)"></div>
+						<div id="c12" class="cell" onclick="RevisarCelda(1,2)"></div>
+						<div id="c22" class="cell" onclick="RevisarCelda(2,2)"></div>
+					</div>
+					<div class="row">
+						<div id="c01" class="cell" onclick="RevisarCelda(0,1)"></div>
+						<div id="c11" class="cell" onclick="RevisarCelda(1,1)"></div>
+						<div id="c21" class="cell" onclick="RevisarCelda(2,1)"></div>
+					</div>
+					<div class="row">
+						<div id="c00" class="cell" onclick="RevisarCelda(0,0)"></div>
+						<div id="c10" class="cell" onclick="RevisarCelda(1,0)"></div>
+						<div id="c20" class="cell" onclick="RevisarCelda(2,0)"></div>
+					</div>					
+				</div>
+				<div id="mensaje">
+					<p id="notificacion"></p>
+					<div id="panel">
+						<p id="boton" onclick="Autoplay()"></p>
+					</div>
+				</div>						
+			</div>
+		</div>
+	</div>
+	<script src="js/adminrevisiones.js"></script>
+	<script src="js/ia.js"></script>
+	<script src="js/autoplay.js"></script>
+
+</body>
+</html>
